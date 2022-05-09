@@ -1,0 +1,41 @@
+.bodyPage {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  width: 97vw;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.apaBrand-bottom {
+  display: block;
+  color: #e70c8f;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  font-size: 2.7rem;
+}
+
+.bg-custom {
+  background-color: #bd0172;
+  width: 100vw;
+  height: 50px;
+  align-content: center;
+}
+
+.bg-custom-02 {
+  color: black;
+  background: #aaffac;
+  border: 2px dotted black;
+  border-radius: 15px;
+}
+
+bg-02 {
+  background-color: #3b3b3b;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: black;
+}

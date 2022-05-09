@@ -4,7 +4,7 @@ const router = express.Router();
 
 // ROUTER PARA COLLECCION PRODUCTS
 router.get('/', productsControllers.landingProductos);
-router.get('/detalles', productsControllers.detalleProductos);
+router.get('/local-:idP', productsControllers.getByID);
 module.exports = router;
 
 // RUTAS PARAMETRIZADAS

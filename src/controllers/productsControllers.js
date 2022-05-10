@@ -5,12 +5,12 @@ const comunasFilePath = path.join(__dirname, '../data/comunasDB.json')
 const localsFilePath = path.join(__dirname, '../data/localsDB.json')
     //JSON OBJECT --> JS OBJECT
 const comunasDB = JSON.parse(fs.readFileSync(comunasFilePath, 'utf-8'));
-const p00 = JSON.parse(fs.readFileSync(localsFilePath, 'utf-8'));
+const localsDB = JSON.parse(fs.readFileSync(localsFilePath, 'utf-8'));
 let controller = {
     createTelos: (req, res) => {
         let comunaID = req.params.comunaID
         res.render('products/productosComuna', {
-            title: 'Comuna ' + p00
+            title: 'Comuna ' + localsDB
         })
     },
     // detallesL: (req, res) => {
@@ -25,8 +25,13 @@ let controller = {
             comunas: comunasDB
         })
     },
-    comunasByIdC: (req, res)=>{
-        res.render('products/products_section')
+    detailsByIdC: (req, res)=>{
+        let idC = req.params.idC
+        res.render('products/productosComuna', {title:'COMUNA #' + idC})
+    },
+    detailsByIdE: (req, res)=>{
+        let idE= req.params.name;
+        res.redirect('usuarios/cadastro')
     }
 }
 module.exports = controller

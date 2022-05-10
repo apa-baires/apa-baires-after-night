@@ -2,7 +2,7 @@ const e = require("connect-flash");
 
 let controller = {
 	login: (req, res) => {
-		res.render('enterprises/comunasLocales', { title: 'Login EMPRESAS' });
+		res.render('enterprises/login', { title: 'Login EMPRESAS' });
 	},
 	clubE: (req, res) => {
 		res.render('enterprises/landingEmpresas');

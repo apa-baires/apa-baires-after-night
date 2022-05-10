@@ -88,9 +88,9 @@ const ownersRouters = require('./routes/apiOwners.js');
 /**************define end points***************/
 app.use('/', mainRouters);
 app.use('/apiOwners', ownersRouters);
-app.use('/usuarios', usersRouters);
+app.use('/users', usersRouters);
 app.use('/products', productsRouters);
-app.use('/empresas', enterprisesRouters);
+app.use('/enterprises', enterprisesRouters);
 //app.use('/apa-club', apaClubRouters);
 //app.use('/search', searchRouter);
 //app.use('/ApaGame', gameAIRouter);

@@ -4,6 +4,6 @@ const router = express.Router();
 
 router.get('/', enterprisesControllers.login);
 router.get('/club', enterprisesControllers.clubE);
-router.get('/cadastro', enterprisesControllers.register);
-router.post('/cadastro', enterprisesControllers.storage);
+router.get('/register', enterprisesControllers.register);
+router.post('/register', enterprisesControllers.storage);
 module.exports = router;

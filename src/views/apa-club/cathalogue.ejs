@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Carrito</title>
-    <link rel="stylesheet" href="stylesheets/normalize.css" type="text/css">
-    <link rel="stylesheet" href="stylesheets/skeleton.css" type="text/css">
-    <link rel="stylesheet" href="stylesheets/style_catalogue.css" type="text/css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
 <body>
 <header id="header" class="header">
     <div class="container">
@@ -19,9 +20,9 @@
                 <ul>
                     <li class="submenu">
                             <img src="img/cart.png" id="img-carrito">
-                            <div id="cart>
+                            <div id="carrito">
                                     
-                                    <table id="cart_list" class="u-full-width">
+                                    <table id="lista-carrito" class="u-full-width">
                                         <thead>
                                             <tr>
                                                 <th>Imagen</th>
@@ -34,7 +35,7 @@
                                         <tbody></tbody>
                                     </table>
 
-                                    <a href="#" id="empty_cart" class="button u-full-width">Vaciar Carrito</a>
+                                    <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
                             </div>
                     </li>
                 </ul>
@@ -80,9 +81,8 @@
         </div>
 
     </div>
-<!-- container cart -->
-    <div id="list_rooms" class="container">
-        <!-- header cart page -->
+
+    <div id="lista-cursos" class="container">
         <h1 id="encabezado" class="encabezado">Cursos En Línea</h1>
         <div class="row">
             <div class="four columns">
@@ -93,11 +93,10 @@
                         <p>Juan Pedro</p>
                         <img src="img/estrellas.png">
                         <p class="precio">$200  <span class="u-pull-right ">$15</span></p>
-                        <a href="#" class="u-full-width button-primary button input getItemCart data-id="1">Agregar Al Carrito</a>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Agregar Al Carrito</a>
                     </div>
                 </div> <!--.card-->
             </div>
-            <!-- first roll of four cols -->
             <div class="four columns">
                     <div class="card">
                         <img src="img/curso2.jpg" class="imagen-curso u-full-width">
@@ -106,7 +105,7 @@
                             <p>Juan Pedro</p>
                             <img src="img/estrellas.png">
                             <p class="precio">$200  <span class="u-pull-right ">$15</span></p>
-                            <a href="#" class="u-full-width button-primary button input getItemCart data-id="2">Agregar Al Carrito</a>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="2">Agregar Al Carrito</a>
                         </div>
                     </div>
             </div>
@@ -118,7 +117,7 @@
                             <p>Juan Pedro</p>
                             <img src="img/estrellas.png">
                             <p class="precio">$200  <span class="u-pull-right ">$15</span></p>
-                            <a href="#" class="u-full-width button-primary button input getItemCart data-id="3">Agregar Al Carrito</a>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="3">Agregar Al Carrito</a>
                         </div>
                     </div> <!--.card-->
             </div>
@@ -162,7 +161,6 @@
                     </div> <!--.card-->
             </div>
         </div> <!--.row-->
-        <!-- 2d row of 4 cols -->
         <div class="row">
             <div class="four columns">
                 <div class="card">
@@ -240,7 +238,7 @@
                 </div>
             </div> <!--.row-->
     </div>  
-<!-- 3rd row of 4 cols -->
+
     <footer id="footer" class="footer">
         <div class="container">
             <div class="row">
@@ -264,7 +262,7 @@
         </div>
     </footer>
 
-    <script src="/js/scriptCart.js"></script>
+    <script src="js/app.js"></script>
 
 </body>
 </html>

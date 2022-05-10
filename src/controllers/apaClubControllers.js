@@ -4,10 +4,7 @@ const contactContent = "Scelerisque eleifend donec pretium vulputate sapien. Rho
 */
 let controllers = {
 	home: (req, res) => {
-		res.render('apa-club/cathalogue', {
-			startingContent: homeStartingContent,
-			posts: posts,
-		});
+		res.render('apa-club/cathalogue');
 	},
 };
 module.exports = controllers;

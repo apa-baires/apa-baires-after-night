@@ -30,8 +30,10 @@ let controller = {
         res.render('products/productosComuna', {title:'COMUNA #' + idC})
     },
     detailsByIdE: (req, res)=>{
-        let idE= req.params.name;
-        res.redirect('usuarios/cadastro')
+        let idE= req.params.idE;
+        res.render('products/detallesNOSocios',
+        {idE: req.params.body }
+        )
     }
 }
 module.exports = controller

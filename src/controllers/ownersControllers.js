@@ -1,15 +1,16 @@
-
-
 let controller = {
-  loginOwners: (req,res)=>{
-      res.render('apiOwners/sign-in')
-  },
+	loginOwners: (req, res) => {
+		res.render('apiOwners/sign-in');
+	},
 	homeOwners: (req, res) => {
 		res.render('apiOwners/virtual-reality');
 	},
 	dashOwners: (req, res) => {
 		res.render('apiOwners/dashboard');
-	}
+	},
+	tableOwners: (req, res) => {
+		res.render('apiOwners/tables');
+	},
 	/*formRooms: (req, res) => {
 		let idP = req.params.idP;
 		res.render('products/productsById', {

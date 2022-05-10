@@ -11,11 +11,8 @@ app.set('view engine', 'ejs');
 
 const methodOverride = require('method-override');
 //const session = require('express-session’);
-//const ErrorMiddleware = require('./middlewares/ErrorMiddleware’);
-
-
-
-const mainRouters = require('./routes/main.js');
+//const ErrorMiddleware = require('./middlewares/ErrorMiddleware’)
+//const mainRouters = require('./routes/main.js');
 //const apaClubRouters = require('./routes/apaClub.js');
 const usersRouter = require('./routes/users.js');
 const productsRouter = require('./routes/products.js');
@@ -54,17 +51,16 @@ app.use(methodOverride('_method')); // Para poder utilizar PUT o DELETE sobreesc
 module.exports = app;
 
 /***********settings****** */
-const express= require('express')
-const PORT = 3022;
-const port = process.env.PORT || 3022;
+const express = require('express');
+const PORT = 3021;
+const port = process.env.PORT || 3021;
 const path = require('path');
-const app = express()
-;
+const app = express();
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, '/views'));
 /***********static  files***************************/
 app.use(express.static(path.join(__dirname, './../public')));
-const methodOverride = require('method-override')
+const methodOverride = require('method-override');
 /***********middlewares expreess*******/
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
@@ -81,7 +77,7 @@ app.use(methodOverride('_method'));
 
 /**************require routes***************/
 const mainRouters = require('./routes/main.js');
-//const apaClubRouter = require('./routes/apaClubRoutes.js');
+const apaClubRouters = require('./routes/apa-club.js');
 const usersRouters = require('./routes/users.js');
 const productsRouters = require('./routes/products.js');
 const enterprisesRouters = require('./routes/enterprises.js');
@@ -95,12 +91,12 @@ app.use('/apiOwners', ownersRouters);
 app.use('/usuarios', usersRouters);
 app.use('/telos', productsRouters);
 app.use('/empresas', enterprisesRouters);
-//app.use('/ApaOwners', apiOwnerRouter);
+app.use('/apa-club', apaClubRouters);
 //app.use('/search', searchRouter);
 //app.use('/ApaGame', gameAIRouter);
 //app.use('/staff', staffRouter);
 /***********Server listen 3030****** */
-app.listen(port || PORT, () => {
-    console.log('WS LEVANTADO Y CORRIENDO EN 3022');
+app.listen(port, () => {
+	console.log('WS LEVANTADO Y CORRIENDO EN 3021');
 });
-module.exports = app
+module.exports = app;

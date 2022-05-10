@@ -8,10 +8,9 @@
     <meta name="APA AFTER-NIGHT" content="BUSCADOR DE TELOS, TELOS SEARCH ENGINE, TELOS ARGENTINA, ARGENTINA, CABA, TELOS-CABA">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <%- include('../partials/head'); %>
-        <link rel='stylesheet' href='/stylesheets/style.css' type="text/css" />
-        <link rel='stylesheet' href='/stylesheets/style_login.css' type="text/css" />
-        <!--FONT AWESOME  -->
-        <script src="https://kit.fontawesome.com/0c502158eb.js " crossorigin="anonymous "></script>
+        <link rel='stylesheet' href='stylesheets/style.css' type="text/css" />
+        <link rel='stylesheet' href='stylesheets/style_login.css' type="text/css" />
+
         <title>APA!
             <%= title ;%>
         </title>
@@ -19,19 +18,18 @@
 </head>
 
 <body class="bodyPage" >
-<div class="div1">
+
     <%-  include('../partials/navbarTop'); %>
-</div>
-<div class="div2">
-    <div class="container  w-100  bg-light mt-2 rounded shadow bg-4" height="100vh">
+
+<div class="container" style="vertocal-align: middle; margin-top: 3rem;">
+<div class="row">
+    <div class="col-12  w-100  bg-light mt-2 rounded shadow bg-4 mg-auto" height="100vh">
         <div class="row align-items-stretch bg-01">
             <div class="col bg d-none d-lg-block col-md-6 col-lg-5 col-xl-6 rounded bg-passion">
                 <img src="images/svg/apa-banner-01.svg" alt="apa baneer 01 " class="d-100 img-fluid " width="800px "/>
             </div>
-  
-                <div class="col bg-light col-login ">
-                    <div class="py-5">
-                        <div class="text-center ">
+                <div class="col bg-light col-login py-5 px-5">
+                                        <div class="text-center ">
                             <h2 class="text-custom "><span class="brand-name ">APA!</span><BR/> Login EMPRESAS!</h2>
                         </div>
                     <form class="form-group" name="userRegister" action="form/register" action="POST">
@@ -48,16 +46,13 @@
                          <a href="index. html " class="btn btn-primary btn-block ">
                            Login
                          </a>
-                         </div>
+                       
                       </form>
                       </div>
-               </div>
-    </div>
-    </div>
-    </div>
-    </div>
-<div class="div3">
-<%- include('../partials/navbarBottom'); %>
- </div>
+             </div>
+
+  
+       <%- include('../partials/navbarBottom'); %>
+
  </body>
  </html> 

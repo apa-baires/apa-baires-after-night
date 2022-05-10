@@ -1,131 +1,131 @@
 /*navbar*/
 
 .menu {
-	margin-top: 0px;
-	height: 80px;
-	border: 2px solid #ff4d6f;
-	border-radius: 0 0 15px 15px;
-	box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(48, 1, 25, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-	-webkit-border-radius: 0 0 15px 15px;
-	-moz-border-radius: 0 0 15px 15px;
-	-ms-border-radius: 0 0 15px 15px;
-	-o-border-radius: 0 0 15px 15px;
-	margin-bottom: 40px;
-	background: #ff4d6f;
-	padding-right: 4rem;
-	text-align: center;
+    margin-top: 0px;
+    height: 80px;
+    border: 2px solid #ff4d6f;
+    border-radius: 0 0 15px 15px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(48, 1, 25, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    -webkit-border-radius: 0 0 15px 15px;
+    -moz-border-radius: 0 0 15px 15px;
+    -ms-border-radius: 0 0 15px 15px;
+    -o-border-radius: 0 0 15px 15px;
+    margin-bottom: 40px;
+    background: #ff4d6f;
+    padding-right: 4rem;
+    text-align: center;
 }
 
 .dropdown-menu {
-	border: 0px;
-	padding: 0.5em;
-	margin: auto;
-	width: 50% auto;
-	text-align: center;
+    border: 0px;
+    padding: 0.5em;
+    margin: auto;
+    width: 50% auto;
+    text-align: center;
 }
 
 .dropdown-divider {
-	color: #ff4d6f;
-	width: 100%;
+    color: #ff4d6f;
+    width: 100%;
 }
 
 .apaBrand {
-	font-family: 'Josefin Sans', sans-serif;
-	font-weight: 700;
-	font-size: 2.7rem;
-	color: #ff4d6f;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    font-size: 2.7rem;
+    color: #ff4d6f;
 }
 
 .apaLink {
-	font-family: 'Josefin Sans', sans-serif;
-	font-weight: 400;
-	font-size: 1.7rem;
-	color: #ff4d6f;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.7rem;
+    color: #ff4d6f;
 }
 
 .nLink {
-	font-family: 'Josefin Sans', sans-serif;
-	font-weight: 400;
-	font-size: 1.3rem;
-	color: #060004;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.3rem;
+    color: #060004;
 }
 
 .nlink a:link {
-	color: black;
+    color: black;
 }
 
 .nlink a:hover {
-	color: #ff4d6f;
+    color: #ff4d6f;
 }
 
 .menu-expand {
-	text-align: margin-top: 1em;
-	padding-bottom: 1rem;
-	margin: 0px solid #E70C8F;
-	border-radius: 15px;
+    text-align: margin-top: 1em;
+    padding-bottom: 1rem;
+    margin: 0px solid #E70C8F;
+    border-radius: 15px;
 }
 
 .menu-expand li:hover {
-	background: #ff4d6f;
+    background: #ff4d6f;
 }
 
 .news__link::after {
-	content: "";
-	width: 130%;
-	height: 8remp;
-	position: relative;
-	top: 0;
-	left: 0;
+    content: "";
+    width: 130%;
+    height: 8remp;
+    position: relative;
+    top: 0;
+    left: 0;
 }
 
 .apa-name {
-	font-family: "Josefin Sans", sans-serif;
-	font-weight: 700;
-	color: #ff4d6f;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 700;
+    color: #ff4d6f;
 }
 
 
 /*navfooter*/
 
 .apaBrand-bottom {
-	display: block;
-	color: #ff4d6f;
-	font-family: 'Josefin Sans', sans-serif;
-	font-weight: 700;
-	font-size: 2.7rem;
+    display: block;
+    color: #ff4d6f;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    font-size: 2.7rem;
 }
 
 .bg-custom {
-	background-color: #ff4d6f;
-	width: 100vw;
-	height: 50px;
-	align-content: center;
+    background-color: #ff4d6f;
+    width: 100vw;
+    height: 50px;
+    align-content: center;
 }
 
 .bg-custom-02 {
-	color: black;
-	background: #AAFFAC;
-	border: 2px dotted black;
-	border-radius: 15px;
+    color: black;
+    background: #AAFFAC;
+    border: 2px dotted black;
+    border-radius: 15px;
 }
 
 .bg-02 {
-	background: url("../images/svg/bg-02.svg");
-	background-repeat: repeat;
+    background: url("../images/svg/bg-02.svg");
+    background-repeat: repeat;
 }
 
 .footer-link {
-	text-decoration: none;
-	color: black;
+    text-decoration: none;
+    color: black;
 }
 
 .ownerApi {
-	font-family: 'Overpass', sans-serif;
-	font-size: 1.5rem;
-	color: #dbd7ff;
+    font-family: 'Overpass', sans-serif;
+    font-size: 1.5rem;
+    color: #dbd7ff;
 }
 .bodyPage {
-	box-sizing: border-box;
+    box-sizing: border-box;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(12, 1fr);

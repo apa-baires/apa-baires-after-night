@@ -77,7 +77,7 @@ app.use(methodOverride('_method'));
 
 /**************require routes***************/
 const mainRouters = require('./routes/main.js');
-const apaClubRouters = require('./routes/apa-club.js');
+//const apaClubRouters = require('./routes/apa-club.js');
 const usersRouters = require('./routes/users.js');
 const productsRouters = require('./routes/products.js');
 const enterprisesRouters = require('./routes/enterprises.js');
@@ -89,9 +89,9 @@ const ownersRouters = require('./routes/apiOwners.js');
 app.use('/', mainRouters);
 app.use('/apiOwners', ownersRouters);
 app.use('/usuarios', usersRouters);
-app.use('/telos', productsRouters);
+app.use('/products', productsRouters);
 app.use('/empresas', enterprisesRouters);
-app.use('/apa-club', apaClubRouters);
+//app.use('/apa-club', apaClubRouters);
 //app.use('/search', searchRouter);
 //app.use('/ApaGame', gameAIRouter);
 //app.use('/staff', staffRouter);

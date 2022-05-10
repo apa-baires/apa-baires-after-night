@@ -1,3 +1,13 @@
+const fs = require('fs')
+const path = require('path')
+    //REQUIRE PATH, READ FILE and SYNC JSON DOCUMENT
+
+const listEDB = path.join(__dirname + '/../data/enterpriseGeneralListDB.json')
+    //JSON OBJECT --> JS OBJECT
+
+const localsDB = JSON.parse(fs.readFileSync(listEDB, 'utf-8'));
+
+
 let controller = {
 	loginOwners: (req, res) => {
 		res.render('apiOwners/sign-in');
@@ -11,11 +21,13 @@ let controller = {
 	tableOwners: (req, res) => {
 		res.render('apiOwners/tables');
 	},
-	/*formRooms: (req, res) => {
-		let idP = req.params.idP;
-		res.render('products/productsById', {
-			title: 'detalles local #' + idP,
-		});
-	},*/
+
+	getByIdE: (req, res) =>{
+		idEselect = req.params.idE, 
+		res.JSON('apiOwners/enterpriseDetails' + idE,{
+		title: idEselect,
+		localsDB: localsDB.idE
+		})
+	}
 };
-module.exports = controller;
+module.exports = controller

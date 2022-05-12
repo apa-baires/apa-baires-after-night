@@ -1,5 +1,5 @@
 const fs = require('fs')
-const path = require('path')
+const--- path = require('path')
     //REQUIRE PATH, READ FILE and SYNC JSON DOCUMENT
 const comunasFilePath = path.join(__dirname, '../data/comunasDB.json')
 const telosFilePath = path.join(__dirname, '../data/localsDB.json')
@@ -7,7 +7,7 @@ const telosFilePath = path.join(__dirname, '../data/localsDB.json')
 const comunasDB = JSON.parse(fs.readFileSync(comunasFilePath, 'utf-8'));
 const telosDB = JSON.parse(fs.readFileSync(telosFilePath, 'utf-8'));
 let controller = {
-    createTelos: (req, res) => {
+    createTelos: (req res) => {
         let comunaID = req.params.comunaID
         res.render('telos/productosComuna', {
             title: 'Comuna ' + localsDB

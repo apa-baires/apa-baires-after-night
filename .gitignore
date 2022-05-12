@@ -2,3 +2,9 @@
 .nova
 node_modules
 .gitattributes
+.idea/apa-baires-after-night.iml
+.idea/modules.xml
+.idea/workspace.xml
+.vscode
+config
+.notes

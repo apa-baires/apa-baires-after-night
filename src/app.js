@@ -51,9 +51,10 @@ app.use(methodOverride('_method')); // Para poder utilizar PUT o DELETE sobreesc
 module.exports = app;
 
 /***********settings****** */
+require('dotenv').config()
 const express = require('express');
 const PORT = 3021;
-const port = process.env.PORT || 3021;
+const port = process.env.PORT || 3000;
 const path = require('path');
 const app = express();
 app.set('view engine', 'ejs');

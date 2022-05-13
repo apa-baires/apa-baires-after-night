@@ -1,7 +1,7 @@
-const apaClubControllers = require('./../controllers/apaClubControllers.js');
+const apaClubControllers = require('../controllers/apaClubControllers.js');
 const express = require('express');
 const router = express.Router();
 
-router.get('/', apaClubControllers.home);
+router.get('/', apaClubControllers.index)
 
-module.exports = router;
+module.exports = router

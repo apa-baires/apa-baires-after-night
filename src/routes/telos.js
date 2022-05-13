@@ -13,7 +13,7 @@ const router = express.Router()
 /telos/:id              Eliminación Producto*/
 
 
-* Mostrar la información que corresponda según el contexto y la sección.
+/* Mostrar la información que corresponda según el contexto y la sección.
 * Enviar los datos por el método correspondiente
 * Redireccionar a la sección que corresponda según el contexto
 */

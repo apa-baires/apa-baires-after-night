@@ -3,7 +3,7 @@ const express = require('express');
 const router = express.Router();
 
 router.get('/', enterprisesControllers.login);
-router.get('/club', enterprisesControllers.clubE);
+router.get('/clients', enterprisesControllers.clubE);
 router.get('/register', enterprisesControllers.register);
 router.post('/register', enterprisesControllers.storage);
 module.exports = router;
